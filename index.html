@@ -1,1 +1,227 @@
-<a href="https://github.com/truonggiang79/JSA26.git">Trường Giang</a>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 3</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .banner {
+            background-image: url("hero.jpg");
+            height: 550px;
+            background-size: cover;
+            position: relative;
+        }
+
+        .banner::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        }
+
+        .wrapper {
+            z-index: 2;
+            color: #ffffff;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+
+        .navbar img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 60px;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+
+        .slogan {
+            font-size: 40px;
+            margin: 90px 200px;
+            font-weight: 100;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        button {
+            background-color: #ffffff;
+            border: 1px solid #ffffff;
+            border-radius: 30px;
+            padding: 10px 20px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        button.hungry {
+            background-color: #ff9100;
+            color: #ffffff;
+            border: 1px solid #ff9100;
+        }
+
+        button.show {
+            background-color: transparent;
+            border: 1px solid #ff9100;
+            color: #ff9100;
+        }
+
+        .features {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px 0;
+        }
+
+        .title {
+            font-weight: 300;
+            text-transform: uppercase;
+            font-size: 30px;
+        }
+
+        .divider {
+            height: 2px;
+            width: 100px;
+            background-color: #ff9100;
+        }
+
+        .brief {
+            font-weight: 200;
+            color: #7b7b7b;
+            padding: 0 100px;
+        }
+
+        .features ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        li svg {
+            width: 60px;
+            height: 60px;
+            color: #ff9100;
+        }
+
+        li h3 {
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        li p {
+            font-weight: 300;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <div class="wrapper">
+            <div class="navbar">
+                <img src="logo-white.png" alt="Logo">
+                <ul>
+                    <li>sign up</li>
+                    <li>how it work</li>
+                    <li>our cities</li>
+                    <li>sign up</li>
+                </ul>
+            </div>
+            <div class="slogan">
+                <p>
+                    Goodbye junk food.<br>
+                    Hello super healthy meals.
+                </p>
+                <div class="buttons">
+                    <button class="hungry">I'm hungry</button>
+                    <button class="show">Show me more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="features">
+        <h2 class="title">
+            get food fast - not fast food
+        </h2>
+        <div class="divider"></div>
+        <p class="brief">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, reiciendis vel. Ipsa unde ratione enim quae
+            laboriosam. Quas itaque repudiandae non dicta, praesentium, sequi eveniet sunt iste pariatur, natus a.
+        </p>
+        <ul>
+            <li>
+                <svg fill="currentColor" viewBox="0 0 16 16">
+                    <path
+                        d="M5.68 5.792 7.345 7.75 5.681 9.708a2.75 2.75 0 1 1 0-3.916ZM8 6.978 6.416 5.113l-.014-.015a3.75 3.75 0 1 0 0 5.304l.014-.015L8 8.522l1.584 1.865.014.015a3.75 3.75 0 1 0 0-5.304l-.014.015L8 6.978Zm.656.772 1.663-1.958a2.75 2.75 0 1 1 0 3.916L8.656 7.75Z" />
+                </svg>
+                <h3>Up to 365 days/year</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, incidunt amet est sit quae ipsam
+                    reprehenderit, quo excepturi nulla consequuntur id quos saepe laudantium mollitia voluptatem quidem
+                    omnis commodi ad.</p>
+            </li>
+            <li>
+                <svg fill="currentColor" viewBox="0 0 16 16">
+                    <path
+                        d="M5.68 5.792 7.345 7.75 5.681 9.708a2.75 2.75 0 1 1 0-3.916ZM8 6.978 6.416 5.113l-.014-.015a3.75 3.75 0 1 0 0 5.304l.014-.015L8 8.522l1.584 1.865.014.015a3.75 3.75 0 1 0 0-5.304l-.014.015L8 6.978Zm.656.772 1.663-1.958a2.75 2.75 0 1 1 0 3.916L8.656 7.75Z" />
+                </svg>
+                <h3>Up to 365 days/year</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, incidunt amet est sit quae ipsam
+                    reprehenderit, quo excepturi nulla consequuntur id quos saepe laudantium mollitia voluptatem quidem
+                    omnis commodi ad.</p>
+            </li>
+            <li>
+                <svg fill="currentColor" viewBox="0 0 16 16">
+                    <path
+                        d="M5.68 5.792 7.345 7.75 5.681 9.708a2.75 2.75 0 1 1 0-3.916ZM8 6.978 6.416 5.113l-.014-.015a3.75 3.75 0 1 0 0 5.304l.014-.015L8 8.522l1.584 1.865.014.015a3.75 3.75 0 1 0 0-5.304l-.014.015L8 6.978Zm.656.772 1.663-1.958a2.75 2.75 0 1 1 0 3.916L8.656 7.75Z" />
+                </svg>
+                <h3>Up to 365 days/year</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, incidunt amet est sit quae ipsam
+                    reprehenderit, quo excepturi nulla consequuntur id quos saepe laudantium mollitia voluptatem quidem
+                    omnis commodi ad.</p>
+            </li>
+            <li>
+                <svg fill="currentColor" viewBox="0 0 16 16">
+                    <path
+                        d="M5.68 5.792 7.345 7.75 5.681 9.708a2.75 2.75 0 1 1 0-3.916ZM8 6.978 6.416 5.113l-.014-.015a3.75 3.75 0 1 0 0 5.304l.014-.015L8 8.522l1.584 1.865.014.015a3.75 3.75 0 1 0 0-5.304l-.014.015L8 6.978Zm.656.772 1.663-1.958a2.75 2.75 0 1 1 0 3.916L8.656 7.75Z" />
+                </svg>
+                <h3>Up to 365 days/year</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, incidunt amet est sit quae ipsam
+                    reprehenderit, quo excepturi nulla consequuntur id quos saepe laudantium mollitia voluptatem quidem
+                    omnis commodi ad.</p>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
