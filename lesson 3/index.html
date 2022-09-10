@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var hs = [
+        { name: "Giang", age: 24,},
+        { name: "Giang2", age: 24,},
+        { name: "Giang3", age: 24,},
+        { name: "Giang4", age: 24,},
+        { name: "Giang5", age: 24,},
+        { name: "Giang6", age: 24,},
+        { name: "Giang7", age: 24,},
+        { name: "Giang8", age: 24,},
+        { name: "Giang9", age: 24,},
+        { name: "Giang10", age: 24,},
+        ];
+        
+        localStorage.setItem("hs", JSON.stringify(hs))
+
+        var hsInLS = JSON.parse(localStorage.getItem("hs"))
+        console.log(hsInLS)
+    </script>
+</body>
+</html>

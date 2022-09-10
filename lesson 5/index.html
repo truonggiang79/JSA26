@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 5</title>
+  </head>
+  <body>
+    <script>
+      // Local Storage
+      // localStorage chỉ lưu dữ liệu trên trình duyệt, theo từng trang khác nhau
+
+      // Thêm dữ liệu vào localStorage
+      localStorage.setItem("randomNumber", 100);
+      localStorage.setItem("randomNumber2", 200);
+      localStorage.setItem("randomNumber3", 300);
+      localStorage.setItem("randomNumber4", 400);
+
+      // Lấy dữ liệu ra từ localStorage
+      var random = localStorage.getItem("randomNumber");
+      // console.log(random);
+      // Ép random thành kiểu số "100" => 100
+      random = Number(random);
+      random = Boolean(random); // true/false
+      // console.log(random + 100);
+
+      // Cập nhật dữ liệu trong localStorage
+      localStorage.setItem("randomNumber", "updated");
+
+      // Xóa dữ liệu khỏi localStorage
+      localStorage.removeItem("randomNumber");
+
+      // Xóa hết dữ liệu
+      localStorage.clear();
+
+      var arr = [1, 2, 3, 4, 5, 6];
+      console.log(arr);
+      // localStorage.setItem("array", arr);
+      // var arrInLS = localStorage.getItem("array");
+      // console.log(arrInLS);
+
+      // JSON.stringify() sẽ biến 1 object hoặc array thành dạng chuỗi
+      localStorage.setItem("array", JSON.stringify(arr));
+      var arrInLS = localStorage.getItem("array");
+      // JSON.parse() sẽ biến 1 chuỗi thành Object hoặc Array nếu được
+      arrInLS = JSON.parse(arrInLS);
+      console.log(arrInLS);
+    </script>
+  </body>
+</html>
